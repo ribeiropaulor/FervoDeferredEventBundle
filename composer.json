@@ -18,12 +18,16 @@
     ],
     "type": "symfony-bundle",
     "autoload": {
-        "psr-0": { "Fervo\\DeferredEventBundle": "" }
+        "psr-4": {
+            "Fervo\\DeferredEventBundle\\": ""
+        }
     },
-    "target-dir": "Fervo/DeferredEventBundle",
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": "~2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8|~5.0"
     },
     "suggest": {
         "redeye/sidekiq-bundle": "Simplifies the configuration of your Sidekiq client",
