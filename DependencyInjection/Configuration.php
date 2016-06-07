@@ -39,7 +39,7 @@ class Configuration implements ConfigurationInterface
                                 ->scalarNode('console_path')->defaultNull()->end()
                                 ->scalarNode('dispatch_path')->defaultNull()->end()
                                 ->scalarNode('fastcgi_host')->cannotBeEmpty()->defaultValue('localhost')->end()
-                                ->integerNode('fastcgi_port')->cannotBeEmpty()->defaultValue(9000)->end()
+                                ->integerNode('fastcgi_port')->defaultValue(9000)->end()
                             ->end()
                         ->end()
                     ->end()
